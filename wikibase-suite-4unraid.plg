@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="yes"?>
 <!DOCTYPE PLUGIN [
 <!ENTITY name "wikibase-suite-4unraid">
-<!ENTITY author "ismael.olea@laoficinacultural.org">
+<!ENTITY author "laoficinacultural.org">
 <!ENTITY version "2024.11.20.01">
 <!ENTITY launch "Main">
 <!ENTITY gitURL "https://raw.githubusercontent.com/olea/wikibase-suite-4unraid/main">
@@ -14,17 +14,6 @@
     pluginURL="&pluginURL;" 
     min="6.9.2" 
     support="https://github.com/olea/wikibase-suite-4unraid/issues">
-<CHANGES>
-
-### markdown header
-- markdown list item
-
-markdown text
-
-###2021.10.04
-- Initial Release.
-
-</CHANGES>
 
 <!-- PRE-INSTALL SCRIPT -->
 <FILE Run="/bin/bash">
@@ -51,7 +40,7 @@ echo "estoy instalando"
 echo ""
 echo "-----------------------------------------------------------"
 echo " &name; has been installed."
-echo " Copyright 2023, &author;"
+echo " Copyright 2024, &author;"
 echo " Version: &version;"
 echo "-----------------------------------------------------------"
 echo ""
@@ -68,10 +57,21 @@ rm -rf /usr/local/emhttp/plugins/&name;
 echo ""
 echo "-----------------------------------------------------------"
 echo " &name; has been removed."
-echo " Copyright 2023, &author;"
+echo " Copyright 2024, &author;"
 echo " Version: &version;"
 echo "-----------------------------------------------------------"
 echo ""
 </INLINE>
 </FILE>
+<CHANGES>
+
+    ### markdown header
+    - markdown list item
+    
+    markdown text
+    
+    ###2021.10.04
+    - Initial Release.
+    
+</CHANGES>
 </PLUGIN>

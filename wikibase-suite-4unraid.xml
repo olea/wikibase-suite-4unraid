@@ -1,8 +1,10 @@
 <?xml version="1.0"?>
 <Container version="2">
 <Plugin>True</Plugin>  
+<Beta>True</Beta>
 <PluginURL>https://github.com/olea/wikibase-suite-4unraid/wikibase-suite-4unraid.plg</PluginURL>
-<PluginAuthor>ismael.olea@laoficinacultural.org</PluginAuthor>
+<PluginAuthor>laoficinacultural.org</PluginAuthor>
+<Licence>MIT</Licence>
 <ExtraSearchTerms>Wikibase  Wikibase-Suite Wikidata knowledge-graph semantic-web</ExtraSearchTerms>
 <Name>Wikibase Suite</Name>
 <Support>None for the momment</Support>
@@ -18,7 +20,8 @@
   <Video/>
   
   <TemplateURL>https://github.com/olea/wikibase-suite-4unraid/wikibase-suite-4unraid.xml</TemplateURL>
-  <Icon>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Wikibase_Logo_%E2%80%93_symbol.svg/640px-Wikibase_Logo_%E2%80%93_symbol.svg.png</Icon>
+  <Icon>https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Wikibase_Suite_-_vertical_%28RGB%29.svg/601px-Wikibase_Suite_-_vertical_%28RGB%29.svg.png</Icon>
+  <IconFA>superpowers</IconFA>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
