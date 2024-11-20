@@ -1,0 +1,77 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE PLUGIN [
+<!ENTITY name "wikibase-suite-4unraid">
+<!ENTITY author "ismael.olea@laoficinacultural.org">
+<!ENTITY version "2024.11.20.01">
+<!ENTITY launch "Main">
+<!ENTITY gitURL "https://raw.githubusercontent.com/olea/wikibase-suite-4unraid/main">
+<!ENTITY pluginURL "&gitURL;/&name;.plg">
+]>
+<PLUGIN 
+    name="&name;" 
+    author="&author;" 
+    version="&version;" 
+    pluginURL="&pluginURL;" 
+    min="6.9.2" 
+    support="https://github.com/olea/wikibase-suite-4unraid/issues">
+<CHANGES>
+
+### markdown header
+- markdown list item
+
+markdown text
+
+###2021.10.04
+- Initial Release.
+
+</CHANGES>
+
+<!-- PRE-INSTALL SCRIPT -->
+<FILE Run="/bin/bash">
+<INLINE>
+    echo "estoy preinstalando"
+</INLINE>
+</FILE>
+
+
+<!-- SOURCE FILE -->
+<!-- 
+<FILE Name="/boot/config/plugins/&name;/&name;-&version;.tgz">
+<URL>"&gitURL;/&name;-&version;.tgz"</URL>
+</FILE>
+-->
+
+<!-- PLUGIN INSTALL FILE -->
+<FILE Run="/bin/bash">
+<INLINE>
+echo "estoy instalando"
+# tar -xf /boot/config/plugins/&name;/&name;-&version;.tgz -C /usr/local/emhttp/plugins 2&gt;/dev/null
+# chmod +x /usr/local/emhttp/plugins/&name;/nchan/zfs_master
+
+echo ""
+echo "-----------------------------------------------------------"
+echo " &name; has been installed."
+echo " Copyright 2023, &author;"
+echo " Version: &version;"
+echo "-----------------------------------------------------------"
+echo ""
+</INLINE>
+</FILE>
+
+
+<!-- PLUGIN REMOVAL -->
+<FILE Run="/bin/bash" Method="remove">
+<INLINE>
+echo "Removing &name;..."
+rm -rf /boot/config/plugins/&name;
+rm -rf /usr/local/emhttp/plugins/&name;
+echo ""
+echo "-----------------------------------------------------------"
+echo " &name; has been removed."
+echo " Copyright 2023, &author;"
+echo " Version: &version;"
+echo "-----------------------------------------------------------"
+echo ""
+</INLINE>
+</FILE>
+</PLUGIN>

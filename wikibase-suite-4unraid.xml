@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Container version="2">
+<Plugin>True</Plugin>  
+<PluginURL>https://github.com/olea/wikibase-suite-4unraid/wikibase-suite-4unraid.plg</PluginURL>
+<PluginAuthor>ismael.olea@laoficinacultural.org</PluginAuthor>
+<ExtraSearchTerms>Wikibase  Wikibase-Suite Wikidata knowledge-graph semantic-web</ExtraSearchTerms>
+<Name>Wikibase Suite</Name>
+<Support>None for the momment</Support>
+<WebPage>https://github.com/wmde/wikibase-release-pipeline</WebPage>
+<Project>https://wikiba.se/</Project>
+<Overview>
+    Wikibase Suite (WBS) eases self-hosting Wikibase in production, allowing you to maintain a knowledge graph similar to Wikidata.
+    &#xD;
+    This is a half-baked configuration for Unraid.
+</Overview>
+<Category>Status:Beta Cloud Productivity MediaApp:Other</Category>
+  <Screenshot/>
+  <Video/>
+  
+  <TemplateURL>https://github.com/olea/wikibase-suite-4unraid/wikibase-suite-4unraid.xml</TemplateURL>
+  <Icon>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Wikibase_Logo_%E2%80%93_symbol.svg/640px-Wikibase_Logo_%E2%80%93_symbol.svg.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <!-- <RequiresFile>/var/log/plugins/unassigned.devices.plg</RequiresFile>
+   <Requires>
+   **Nvidia Driver plugin** (nVidia Support) *or*
+   **Intel GPU TOP plugin** (Intel Support) *or*
+   **AMD Driver** and **RadeonTop plugins** (AMD Support)
+   </Requires>
+   -->
+   <!--
+  <Config
+    Name="Host Port 1" 
+    Target="8080" 
+    Default="" 
+    Mode="tcp" 
+    Description="" 
+    Type="Port" 
+    Display="always" 
+    Required="false" 
+    Mask="false">8282
+    </Config>
+    -->
+  <hideFromCA>false</hideFromCA>
+</Container>
